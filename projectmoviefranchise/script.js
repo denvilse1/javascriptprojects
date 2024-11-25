@@ -42,3 +42,46 @@ const li = document.createElement("li");
 //? The above element will not do anything
 
 ul.append(li); // it's working
+
+//? adding content to this list item that has been
+
+// Modifying the text
+
+const firstlistItem = document.querySelector(".list-name");
+
+console.log(firstlistItem.innerText);
+console.log(firstlistItem.textContent);
+console.log(firstlistItem.innerHTML);
+
+// updating the text
+li.innerText = "shaktimaan";
+
+//how to add remove or change html element attributes such as classes
+
+//?Modifying Attributes and Classes
+
+li.setAttribute("id", "usingDom");
+
+// Adding classes
+li.classList.add("list-name");
+
+//!Traverse the DOM
+
+//Parent Node traverse
+
+console.log(ul.parentNode); // this is giving the parent element/container of the element that we have selected
+console.log(ul.parentNode.parentNode);
+//This is giving the parent element of the element/container
+//! basically giving the parent element of the selected selected element.
+
+const html = document.documentElement;
+console.log(html.parentNode); //? This is returning #document
+console.log(html.parentElement);
+
+//! child node traversal
+console.log(ul.childNodes);
+
+console.log(ul.firstChild);
+
+console.log(ul.lastChild);
+//?these firstChild and LastChild returns text as Node or TextNode

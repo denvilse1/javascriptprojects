@@ -12,7 +12,7 @@ body {
 }
 
 .container-parent {
-  height: 250px;
+  height: 300px;
   width: 500px;
   display: flex;
   flex-direction: column;
