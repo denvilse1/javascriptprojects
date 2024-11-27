@@ -28,16 +28,21 @@ body {
 
   margin-left: 2rem;
 }
-
-.btn-event {
-  height: 3rem;
-  width: 5rem;
+.btn1,
+.btn2,
+.btn3 {
   background-image: linear-gradient(
     to top,
     #ff9a9e 0%,
     #fecfef 99%,
     #fecfef 100%
   );
+}
+
+.btn-event {
+  height: 3rem;
+  width: 5rem;
+
   border-radius: 15px;
   border-color: white;
 }
