@@ -2,7 +2,7 @@
 
 //? element>addEventListener("click",funciton);
 
-const buttontwo = document.querySelector(".btn-1");
+const buttontwo = document.querySelector(".btn-2");
 const buttonthree = document.querySelector(".btn-3");
 
 //creating a call back function
@@ -34,3 +34,23 @@ function changeBgColor() {
 }
 
 newBackgroundColor.addEventListener("click", changeBgColor);
+
+//!Adding and removing using button click
+
+const Addremoveclass = document.querySelector(".btn1");
+const removeClass = document.querySelector(".add-Class");
+
+function clickButton() {
+  Addremoveclass.classList.add("btn1-add-remove");
+  removeClass.classList.remove("btn1-add-remove");
+  console.log("adding class");
+}
+
+function Addclass() {
+  Addremoveclass.classList.remove("btn1-add-remove");
+  removeClass.classList.add("btn1-add-remove");
+}
+
+Addremoveclass.addEventListener("click", clickButton);
+
+removeClass.addEventListener("click", Addclass);
