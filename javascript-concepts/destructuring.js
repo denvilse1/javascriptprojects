@@ -28,6 +28,29 @@ let personal2 = {
   phe: "91924646",
 };
 
-let { name1 = nayanamf, phone1 = phe } = personal2;
-console.log(nayanam);
-console.log(phone1);
+//! let { name1 = nayanamf, phone1 = phe } = personal2;
+//! console.log(nayanam);
+//! console.log(phone1);
+
+//To rename the variable you have to use x:name of the variable in array destructuring
+const { name1: Aslinaam, phe: phoneNum } = personal2;
+console.log(Aslinaam);
+console.log(phoneNum);
+
+//how to destructure nested object
+
+let personal3 = {
+  name12: ["Elon", "musk"],
+  phe1: "91924646",
+};
+
+// const {
+//   name12: { firstname, lastname },
+//   phe1: phone22,
+// } = personal3;
+// console.log(firstname);
+// console.log(lastname);
+// console.log(phone22);
+const [firstname, lastname] = personal3.name12;
+console.log(firstname);
+console.log(lastname);
