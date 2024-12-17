@@ -54,3 +54,9 @@ let personal3 = {
 const [firstname, lastname] = personal3.name12;
 console.log(firstname);
 console.log(lastname);
+
+//! USING DEFAULT VALUES
+const obj = { a1: 1, b1: 2, c1: 3 };
+
+const { a1, b1, c1, d = 456 } = obj;
+console.log(d, a1);
