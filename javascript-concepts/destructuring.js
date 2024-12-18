@@ -12,7 +12,7 @@ console.log(c);
 
 // object destructuring is done using the curly braces
 let personal = {
-  name: ["dinesh", "khatana"],
+  name: ["d", "k"],
   ph: "9192bakiteri",
 };
 const { name, phone } = personal;
