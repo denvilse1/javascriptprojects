@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  padding: 10px;
+  margin: 5px;
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+button {
+  margin-left: 10px;
+  cursor: pointer;
+}
